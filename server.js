@@ -25,14 +25,14 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Serve static files from the frontend directory
-app.use(express.static(path.join(__dirname, 'Frontend/cook')));
+app.use(express.static(path.join(__dirname, 'Frontend/cook/dist')));
 
 // API routes
 app.use('/api/recipes', recipeRoutes); // Adjusted the base URL
 
 // Serve the frontend for all other routes
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Frontend/cook')); 
+    res.sendFile(path.join(__dirname, 'Frontend/cook/dist/index.html')); 
 });
 
 // Error handling middleware
