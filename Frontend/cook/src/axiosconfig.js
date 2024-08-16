@@ -1,9 +1,11 @@
-// src/axiosConfig.js
 import axios from 'axios';
 import { auth } from './firebase';
 
+// Use environment variable for API base URL
+const baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+
 const axiosInstance = axios.create({
-  baseURL: process.env.REACT_APP_API_URL ||'http://localhost:5000/api',
+  baseURL: baseURL,
   headers: {
     'Content-Type': 'application/json'
   }
