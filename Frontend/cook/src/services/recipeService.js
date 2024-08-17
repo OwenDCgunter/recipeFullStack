@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-//const API_URL = process.env.VUE_APP_API_URL;// || 'http://localhost:5000/recipes';
-const API_URL  = 'https://recipefullstack-9936c0c3b72a.herokuapp.com/api';
+const API_URL = 'http://localhost:5000/recipes';//process.env.VUE_APP_API_URL;// || 'http://localhost:5000/recipes';
+//const API_URL  = 'https://recipefullstack-9936c0c3b72a.herokuapp.com/api';
 console.log("API", API_URL);
 export const getRecipes = () => axios.get(API_URL);
 export const getRecipe = (id) => axios.get(`${API_URL}/${id}`);
