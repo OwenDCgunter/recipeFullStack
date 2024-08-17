@@ -1,7 +1,7 @@
 const admin = require('firebase-admin');
 //const serviceAccount = require('./recipefinder-5fdfd-firebase-adminsdk-gufkh-a5ce0c4724.json'); // Download this from Firebase Console
-console.log("Firebase Private Key:", process.env.FIREBASE_PRIVATE_KEY);
-console.log("Firebase ID:", process.env.FIREBASE_PROJECT_ID);
+//console.log("Firebase Private Key:", process.env.FIREBASE_PRIVATE_KEY);
+//console.log("Firebase ID:", process.env.FIREBASE_PROJECT_ID);
 const serviceAccount = {
   type: process.env.FIREBASE_TYPE,
   project_id: process.env.FIREBASE_PROJECT_ID,
