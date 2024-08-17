@@ -3,7 +3,7 @@ import { auth } from './firebase';
 
 // Use environment variable for API base URL
 //const baseURL = process.env.VUE_APP_API_URL; //|| 'http://localhost:5000/api';
-const baseURL = 'http://recipefullstack-9936c0c3b72a.herokuapp.com/api';
+const baseURL = 'https://recipefullstack-9936c0c3b72a.herokuapp.com/api';
 console.log("BASE", baseURL);
 const axiosInstance = axios.create({
   baseURL: baseURL,
