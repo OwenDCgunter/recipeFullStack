@@ -1,6 +1,8 @@
 ﻿# Cooking Website
 User Authentication: Register email and password then login.
+
 Recipe Management: Create, edit, and delete your recipes.
+
 Recipe Discovery: Browse recipes shared by other users.
 
 ![add recipe](https://github.com/user-attachments/assets/a05b839e-ffab-420e-af97-0d2a14b30770)
